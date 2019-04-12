@@ -86,22 +86,22 @@ unsigned int tabspaces = 8;
 unsigned int alpha = 0xed;
 
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
+	"#000000", 
+	"#f22c40",
+	"#5ab738",
+	"#d5911a",
+	"#407ee7",
+	"#6666ea",
+	"#00ad9c",
+	"#a8a19f",
+	"#766e6b",
+	"#f22c40",
+	"#5ab738",
+	"#d5911a",
+	"#407ee7",
+	"#6666ea",
+	"#00ad9c",
+	"#00cc00",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"black",   /* 256 -> bg */
@@ -115,8 +115,8 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 15;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 15;
-static unsigned int defaultrcs = 0;
+static unsigned int defaultcs = 257;
+static unsigned int defaultrcs = 256;
 
 /*
  * Default shape of cursor
