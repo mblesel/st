@@ -113,7 +113,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.9;
+float alpha = 0.7;
 
 /* Background opacity */
 float alpha_def;
@@ -263,8 +263,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
 	// { MODKEY,               XK_p,           selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,            	XK_k,  	    	kscrollup,      {.i =  1} },
-	{ MODKEY,            	XK_j,       	kscrolldown,    {.i =  1} },
+	// { MODKEY,            	XK_k,  	    	kscrollup,      {.i =  1} },
+	// { MODKEY,            	XK_j,       	kscrolldown,    {.i =  1} },
 	{ MODKEY,            	XK_u,  	    	kscrollup,      {.i =  10} },
 	{ MODKEY,            	XK_d,       	kscrolldown,    {.i =  10} },
 	{ MODKEY,               XK_Down, chgalpha,              {.f = -1} }, /* Decrease opacity */
@@ -352,7 +352,7 @@ static Key key[] = {
 	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[3~",      +1,    0},
 	{ XK_KP_Multiply,   XK_ANY_MOD,     "\033Oj",       +2,    0},
 	{ XK_KP_Add,        XK_ANY_MOD,     "\033Ok",       +2,    0},
-	{ XK_KP_Enter,      XK_ANY_MOD,     "\033OM",       +2,    0},
+	// { XK_KP_Enter,      XK_ANY_MOD,     "\033OM",       +2,    0},
 	{ XK_KP_Enter,      XK_ANY_MOD,     "\r",           -1,    0},
 	{ XK_KP_Subtract,   XK_ANY_MOD,     "\033Om",       +2,    0},
 	{ XK_KP_Decimal,    XK_ANY_MOD,     "\033On",       +2,    0},
