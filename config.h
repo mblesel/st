@@ -256,9 +256,9 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_K,           zoom,           {.f = +1} },
-	{ TERMMOD,              XK_J,           zoom,           {.f = -1} },
-	{ TERMMOD,              XK_r,           zoomreset,      {.f =  0} },
+	{ TERMMOD,              XK_Up,          zoom,           {.f = +1} },
+	{ TERMMOD,              XK_Down,        zoom,           {.f = -1} },
+	{ TERMMOD,              XK_Right,       zoomreset,      {.f =  0} },
 	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} },
 	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
 	// { MODKEY,               XK_p,           selpaste,       {.i =  0} },
@@ -270,7 +270,7 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_Down, chgalpha,              {.f = -1} }, /* Decrease opacity */
 	{ MODKEY,               XK_Up,  chgalpha,               {.f = +1} }, /* Increase opacity */
 	{ MODKEY,               XK_Right,chgalpha,              {.f =  0} }, /* Reset opacity */
-	{ MODKEY,              XK_Escape,      keyboard_select,{.i =  0} },
+	{ MODKEY,               XK_Escape,      keyboard_select,{.i =  0} },
 };
 
 /*
